@@ -1,0 +1,244 @@
+body {
+  font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  line-height: 1.71429;
+  font-size: 14px;
+  color: #000000;
+  background-color: white;
+  align-items: center;
+}
+
+@media (max-width: 615px) {
+  .container {
+    max-width: 95vw;
+    margin: auto;
+    padding: 0;
+  }
+  .foto {
+    max-width: 70vw;
+    max-height: 25vh;
+  }
+  .Images {
+    max-height: 25vh;
+  }
+  .HeaderLogo {
+    width: 200px;
+    max-height: 100px;
+    margin: 0;
+    overflow: auto;
+  }
+  .Isten {
+    width: 200px;
+    max-height: 100px;
+  }
+  .Logo {
+    max-height: 130px;
+  }
+  .nav_main {
+    max-height: 100px;
+  }
+  .nav_text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 70vw;
+    margin: auto;
+    padding: 0;
+  }
+  .foto {
+    max-width: 90vw;
+    max-height: 25vh;
+  }
+  .Images {
+    max-height: 475px;
+  }
+  .HeaderLogo {
+    width: 800px;
+    max-height: 400px;
+    margin: 0;
+    overflow: auto;
+  }
+  .Isten {
+    width: 800px;
+    max-height: 400px;
+  }
+  .Logo {
+    max-height: 430px;
+  }
+  .nav_main {
+    width: 1110px;
+  }
+}
+
+.container {
+  overflow: hidden;
+  width: 700px;
+  max-width: 70%;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 0px 15px;
+}
+
+/* Elements */
+
+.Logo {
+  max-width: 580px;
+  height: 130px;
+  margin: auto;
+  margin-bottom: 3vh;
+  position: relative;
+}
+.Isten {
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 300px;
+  height: 130px;
+}
+.nav_main {
+  max-width: 480px;
+  text-align: center;
+  font-style: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.63px;
+  border-bottom: 1px solid rgba(38, 3, 3, 0);
+  border-top: 1px solid rgba(38, 3, 3, 0);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+}
+.nav_text {
+  color: #000000;
+  font-family: le-monde-journal-std;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  text-transform: lowercase;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background: 
+    linear-gradient(white 0 0) left  var(--p, 50%) bottom 0 /var(--d, 10%) 3px no-repeat,
+    linear-gradient(white 0 0) right var(--p, 50%) bottom 0 /var(--d, 10%) 3px no-repeat;
+}
+.nav_text:hover {
+  --d: 90%;
+  --p: 50%;
+  background: 
+    linear-gradient(black 0 0) left  var(--p, 100%) bottom 0 /var(--d, 100%) 3px no-repeat,
+    linear-gradient(black 0 0) right var(--p, 100%) bottom 0 /var(--d, 100%) 3px no-repeat;
+  transition: cubic-bezier(0.46, 0.03, 0.52, 0.96) 0.3s, background-size 0.5s 0.5s;
+}
+
+.Items {
+  position: relative;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+.foto {
+  max-width: 580px;
+  height: 435px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-shadow: 1vmin 1vmin 1vmin rgba(122, 122, 122, 0.5);
+}
+.Footer {
+  max-width: 100%;
+  padding-top: 10vh;
+  font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+.Links {
+  height: 50px;
+  width: 200px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.25;
+  text-align: center;
+  padding-bottom: 10px;
+  border: 0.2vw solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(122, 122, 122, 0.5);
+}
+.endlink {
+  padding: 1vh;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.25;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+.Links:hover {
+  opacity: 1;
+}
+.endlink:hover {
+  opacity: 1;
+}
+
+/* Sub-Elements */
+
+.about__text {
+  max-width: 700px;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.17px;
+  text-transform: none;
+  display: block;
+  line-height: 1.9em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 50px;
+}
+.ContactsLine {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  text-align: left;
+  justify-content: space-between;
+}
+.contact1 {
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+.Zag1 {
+  font-size: 30px;
+  padding-top: 2vh;
+  font-weight: 700;
+  font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+.zag1 {
+  font-size: 24px;
+  padding-bottom: 1vh;
+  font-weight: 700;
+  font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
