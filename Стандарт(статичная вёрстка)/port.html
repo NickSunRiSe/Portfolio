@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <div class="con">
+      <header class="header">
+        <audio id="audio" type="audio/mpeg">
+          <source src="C:\Users\Некит\Desktop\hjvfy\САЙТ\Портфолио\Классика\Assets\sounds\111.mp3" />
+          <source src="C:\Users\Некит\Desktop\hjvfy\САЙТ\Портфолио\Классика\Assets\sounds\222.mp3" />
+          <source src="C:\Users\Некит\Desktop\hjvfy\САЙТ\Портфолио\Классика\Assets\sounds\333.mp3" />
+        </audio>
+        <div class="track_item"> </div>
+        <a class="play">&#9655;</a>
+        <a class="pause">&#9723;</a>
+        <a class="next" onclick="next_track()">&#8811;</a>
+        <a class="prev" onclick="prev_track()">&#8810;</a>
+        <div class="audio-track"><div class="time"></div></div>
+      </header>
+
+        <div class="Text">Простая статичная вёрстка</div>
+        <div class="Con_start">
+          <div class="text_start">
+              Приветствую, меня зовут Никита и это моё Портфолио, <br />
+              а точнее его одностраничная версия с реализацией моих навыков.<br />
+              Мои основные навыки это знание HTML, CSS, JavaScript, React+Redux, так же учу сейчас TypeScript, WordPress, Golang.
+          </div>
+          <div class="slider">
+            <div class="out_slider">
+              <a class="prev_slider" onclick="previousSlide()">&#10094;</a>
+              <a class="next_slider" onclick="nextSlide()">&#10095;</a>
+              <div class="item_slider">
+                  <img src="C:\Users\Некит\Desktop\hjvfy\САЙТ\Портфолио\Классика\Assets\Images\foto1.jpg">
+              </div>
+              <div class="item_slider">
+                  <img src="C:\Users\Некит\Desktop\hjvfy\САЙТ\Портфолио\Классика\Assets\Images\foto2.jpg">
+              </div>
+              <div class="item_slider">
+                  <img src="C:\Users\Некит\Desktop\hjvfy\САЙТ\Портфолио\Классика\Assets\Images\foto3.jpg">
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="Con_video">
+          <a class="play_video">&#9655;</a>
+          <a class="pause_video">&#9723;</a>
+          <video class="video" id="video">
+            <source src="sounds/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+    <footer class="end">
+      <hr />
+      <p>
+        2022 <br />
+        Завхоз Инкорпарейтед <br />
+        Сратов, РА СИ Я. <br />
+      </p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+

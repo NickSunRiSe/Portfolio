@@ -1,0 +1,318 @@
+body {
+  font-family: "Source Code Pro", Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #000000;
+  background-color: white;
+  align-items: center;
+}
+
+.con {
+  overflow: hidden;
+  max-width: 70%;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 0px 15px;
+  background-color: gray;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.header {
+  position: fixed;
+  min-height: 5%;
+  min-width: 80%;
+  max-height: 5%;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  top: 0;
+  margin: 0 auto;
+  z-index: 100;
+  opacity: 0.9;
+}
+
+/*Аудиоплеер*/
+
+.audio__track {
+  font-family: "Ubuntu";
+  font-size: 15px;
+  color: white;
+  position: absolute;
+}
+.audio__play {
+  cursor: pointer;
+  top: 0.2%;
+  left: 67%;
+  position: fixed;
+  min-width: 2.3%;
+  min-height: 4.5%;
+  max-width: 5%;
+  max-height: 5%;
+  z-index: 101;
+  font-size: 1.7vmax;
+  border-collapse: collapse;
+}
+.audio__pause {
+  cursor: pointer;
+  top: 0.2%;
+  left: 71%;
+  position: fixed;
+  min-width: 2.3%;
+  min-height: 4.5%;
+  max-width: 5%;
+  max-height: 5%;
+  z-index: 101;
+  font-size: 1.7vmax;
+  border-collapse: collapse;
+}
+.audio__prev {
+  cursor: pointer;
+  top: 0.2%;
+  left: 75%;
+  position: fixed;
+  min-width: 2.3%;
+  min-height: 4.5%;
+  max-width: 5%;
+  max-height: 5%;
+  z-index: 101;
+  font-size: 1.7vmax;
+  border-collapse: collapse;
+}
+.audio__next {
+  cursor: pointer;
+  top: 0.2%;
+  left: 79%;
+  position: fixed;
+  min-width: 2.3%;
+  min-height: 4.5%;
+  max-width: 5%;
+  max-height: 5%;
+  z-index: 101;
+  font-size: 1.7vmax;
+  border-collapse: collapse;
+}
+.audio__line {
+  width: 100%;
+  height: 1%;
+  background-color: #000000;
+  left: 0;
+  top: 5%;
+  position: fixed;
+  z-index: 1;
+}
+.audio__time {
+  width: 0;
+  height: 1%;
+  background-color: white;
+  left: 0;
+  top: 5%;
+  position: fixed;
+  z-index: 1;
+}
+
+.Text {
+  font-family: "Ubuntu";
+  padding: 30px;
+  margin-top: 3%;
+  left: 0;
+  font-size: 1.2vmax;
+}
+.start__con {
+  overflow: hidden;
+  display: flex;
+  padding: 20px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.start__text {
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.425);
+  border: 0.2vw solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  padding-top: 5px;
+  box-shadow: 5px 5px;
+  box-shadow: 3px 3px 5px rgba(122, 122, 122, 0.5);
+  font-size: 1.2vmax;
+  font-family: "Ubuntu";
+  height: 35%;
+  max-width: 45%;
+  padding: 10px;
+  margin-top: 7vh;
+}
+.slider {
+  max-width: 40%;
+  max-height: 60vh;
+  min-width: 40%;
+  right: 0;
+  position: relative;
+  overflow: hidden;
+  border: 0.2vw solid rgb(255, 255, 255);
+  box-shadow: 5px 5px;
+  box-shadow: 3px 3px 5px rgba(122, 122, 122, 0.5);
+  margin-right: 0;
+  margin-left: 10%;
+  margin-top: 2vh;
+  background-color: black;
+}
+.slider__out {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: inherit;
+  overflow: hidden;
+}
+.slider .slider__item img {
+  object-fit: contain;
+  width: 100%;
+  align-content: center;
+}
+
+.slider .slider__prev {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+}
+.slider .slider__next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  z-index: 10;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vmax;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px;
+}
+.slider .slider__prev:hover,
+.slider .slider__next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slider .slider__item {
+  animation-name: other;
+  animation-duration: 1.2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes other {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Контейнер с видео*/
+
+.video__main {
+  box-sizing: border-box;
+  margin: 5% auto;
+  display: flex;
+  overflow: hidden;
+  width: 40%;
+  height: 25vmax;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 3px #000000;
+  z-index: 2;
+  justify-content: center;
+}
+.video {
+  justify-content: center;
+  align-items: center;
+  z-index: inherit;
+}
+.video__play {
+  cursor: pointer;
+  opacity: 0.7;
+  min-width: 2.3%;
+  min-height: 4.5%;
+  max-width: 5%;
+  max-height: 5%;
+  z-index: 3;
+  font-size: 2.7vmax;
+  align-items: center;
+  position: absolute;
+  margin-top: 17%;
+  margin-right: 10%;
+  border-collapse: collapse;
+  width: auto;
+  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px;
+}
+.video__pause {
+  cursor: pointer;
+  opacity: 0.7;
+  min-width: 2.3%;
+  min-height: 4.5%;
+  max-width: 5%;
+  max-height: 5%;
+  z-index: 3;
+  align-items: center;
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 10%;
+  font-size: 2.7vmax;
+  width: auto;
+  border-collapse: collapse;
+  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px;
+}
+
+button {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.end {
+  width: 100%;
+  text-align: right;
+  font-family: "Ubuntu";
+}
